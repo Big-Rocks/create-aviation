@@ -1,0 +1,167 @@
+.slide-value img{
+    position: relative;
+}
+
+.rs-scale span {
+    display: none!important;
+}
+
+.rs-tooltip {
+    position: absolute!important;
+    background: #6f1212!important;
+    left: -5px!important;
+    top: 25px!important;
+    color: #fff!important;
+    padding: 2px 8px!important;
+    border-radius: 3px!important;
+    font-size: 14px!important;
+}
+.rs-tooltip:after {
+    position: absolute;
+    content: '';
+    border-bottom: 5px solid #6f1212;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: -5px;
+    left: 10px;
+}
+.rs-container .rs-pointer[data-dir="left"] {
+    background-image: url(../images/1-plane.png)!important;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 20px;
+    left: -15px;
+    position: absolute;
+    top: 0;
+    transition: all .2s linear;
+}
+.rs-container .rs-pointer[data-dir="right"] {
+    background-image: url(../images/2-plane.png)!important;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    height: 20px;
+    left: -5px;
+    position: absolute;
+    top: 0;
+    transition: all .2s linear;
+}
+
+
+.dynamic-value {
+    background: none!important;
+}
+
+
+@media (min-width: 1100px) {
+    .bigrocks-adj {
+        width:20%;
+    }
+}
+
+@media (max-width: 1100px) {
+    .bigrocks-adj {
+        width:100%;
+    }
+}
+
+#show_only_container {
+    margin-top : 50px!important;
+    
+}
+.autocomplete {
+    /*the container must be positioned relative:*/
+    position: relative;
+    display: inline-block;
+  }
+  input {
+    border: 1px solid transparent;
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 16px;
+  }
+  input[type=text] {
+    background-color: #f1f1f1;
+    width: 100%;
+  }
+  input[type=submit] {
+    background-color: DodgerBlue;
+    color: #fff;
+  }
+  .autocomplete-items {
+    position: absolute;
+    border: 1px solid #d4d4d4;
+    border-bottom: none;
+    border-top: none;
+    z-index: 99;
+    /*position the autocomplete items to be the same width as the container:*/
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  .autocomplete-items div {
+    padding: 10px;
+    cursor: pointer;
+    background-color: #fff;
+    border-bottom: 1px solid #d4d4d4;
+  }
+  .autocomplete-items div:hover {
+    /*when hovering an item:*/
+    background-color: #e9e9e9;
+  }
+  .autocomplete-active {
+    /*when navigating through the items using the arrow keys:*/
+    background-color: DodgerBlue !important;
+    color: #ffffff;
+  }
+  /* paination */
+  ul, li  {
+      list-style: none;
+      margin: 0px 5px;
+      border-radius : 5px!important;
+      line-height: 1.25em;
+  }
+
+  li a  {
+    list-style: none;
+    margin: 0px 5px;
+    border-radius : 5px!important;
+    line-height: 1.25em;
+}
+  .paginationjs.paginationjs-theme-red .paginationjs-pages li a{
+      border : 1px solid #e0e0e0!important;
+  }
+  .paginationjs.paginationjs-theme-red .paginationjs-pages li{
+    border :none!important;
+}
+.paginationjs.paginationjs-big .paginationjs-pages li>a {
+    padding-left: 10px!important;
+    padding-right: 10px!important;
+    height:38px!important;
+}
+
+  #wrapper {
+      width: 900px;
+      margin: 20px auto;
+  }
+
+  .data-container {
+      margin-top: 20px;
+  }
+
+  .data-container ul {
+      padding: 0;
+      margin: 0;
+  }
+
+  .data-container li {
+      margin-bottom: 5px;
+      padding: 5px 10px;
+      background: #eee;
+      color: #666;
+  }
+  .jet-specify ul li{
+      border-radius : 0px!important;
+      background : none!important;
+  }

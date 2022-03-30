@@ -1,0 +1,903 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	width: 100%;
+	height: auto;
+	padding: 0px;
+	margin: 0px;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+}
+ul, li{
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+}
+.common-btn{
+    display: inline-block;
+    padding: 7px 40px;
+    background: #d61516;
+    border: 1px solid transparent;
+    transition: .5s;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+.common-btn:hover, .register_btn:hover{
+    background: #fff;
+    border: 1px solid #d61516;
+    color: #d61516!important;
+    text-decoration: none;
+    box-shadow: 0px 7px 10px rgb(0 0 0 / 10%);
+}
+.filter-btn .common-btn{
+    border-radius: 0px;
+    padding: 7px 20px;
+}
+.login_btn{
+    display: inline-block;
+    padding: 5px 20px!important;
+    background: transparent;
+    border: 1px solid #d61516;
+    transition: .5s;
+    color: #d61516!important;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+    margin-right: 8px;
+}
+.login_btn:hover{
+    background: #d61516;
+    color: #fff!important;
+}
+.register_btn{
+    display: inline-block;
+    padding: 5px 20px!important;
+    background: #d61516;
+    border: 1px solid transparent;
+    transition: .5s;
+    color: #fff!important;
+    text-decoration: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+
+/*================= header css =================*/
+
+.jet-header .navbar-light .navbar-nav .nav-link {
+    color: #707070;
+}
+.jet-header .navbar-light .navbar-nav .nav-link:hover{
+    color: #d61516;
+}
+.jet-header .navbar-light .navbar-nav .active>.nav-link{
+     color: #d61516;
+}
+.jet-header .navbar-light .navbar-brand{margin-right: 0px;}
+.jet-header .navbar-light .navbar-brand img{
+        width: 251px;
+        height: 44px;
+}
+/*================= header css =================*/
+
+
+/*-------------------- login page css ---------------*/
+.login{
+    position: relative;
+    overflow: hidden;
+     background-image: url(../images/Login-page.png);
+     width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: left;
+    background-size: 86% 100%;
+    display: flex;
+    align-items: center;
+}
+/*.login:after{
+    position: absolute;
+    content: '';
+     background-image: url(../images/login-bg.png);
+     height: 1200px;
+     width: 1200px;
+     left: 0;
+     top: 0px;
+     background-repeat: no-repeat;
+     background-position: center;
+    background-size: cover;
+}*/
+.login-bacg{
+   
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.login-bacg:after{
+    position: absolute;
+    content: '' ;
+    background-image: url(../images/round-1.png);
+    width: 100px;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    top: 30px;
+    right: 11%;
+}
+.login-bacg:before{
+    position: absolute;
+    content: '' ;
+    background-image: url(../images/round-2.png);
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    bottom: -100px;
+    right: -63px;
+}
+.login-bacg .card{
+    box-shadow: 0px 0px 15px rgb(0 0 0 / 7%);
+    border-radius: 10px;
+    border: none;
+    background: #fff;
+    position: relative;
+    z-index: 9;
+}
+
+.login-tittle {
+    font-weight: 500;
+    font-size: 30px;
+}
+.login-tittle span {
+    color: #d61516;
+}
+.login-bacg p{
+    font-size: 20px;
+}
+.login label{
+    color: #686868;
+   font-size: 18px;
+   margin-bottom: 0px;
+}
+.login input{
+    border-radius: 10px;
+    height: 40px;
+}
+.rmbr input{
+    height: auto;
+}
+#rmbr label, {
+    font-size: 18px;
+}
+.forget{
+    text-decoration: none;
+    color: #ababab;
+    transition: .5s;
+    font-size: 18px;
+}
+input#rem {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.forget:hover{
+    color: #d61516;
+    text-decoration: none;
+}
+.sign-up{
+        font-size: 20px;
+}
+.sign-up a{
+    text-decoration: none;
+    color: #d61516;
+    transition: .5s;
+}
+.sign-up a:hover{
+    color: #ababab;
+}
+.show_pass{
+    position: absolute;
+    right: 16px;
+    top: 35px;
+}
+/*-------------------- login page css ---------------*/
+
+.bottom-pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.bottom-pagination .page-pagination{
+
+}
+
+
+/* --------------------filter css------------- */
+
+.jet_search_panel select{
+    appearance: none;
+    position: relative;
+    font-size: 14px;
+}
+/*.jet_search_panel select::-ms-expand {
+  display: none;
+}*/
+.cstm-select:after{
+    content: '\f105';
+    position: absolute;
+    font-family: FontAwesome;
+    color: #d61516;
+    font-size: 18px;
+    z-index: 99;
+    right: 6px;
+    top: 4px;
+}
+
+
+.slide-value img {
+    width: 20px;
+}
+.ratio {
+    font-size: 12px;
+}
+.subject {
+    color: #777;
+    font-size: 14px;
+    padding-bottom: 5px;
+}
+.dynamic-value {
+    width: 100%;
+    height: 7px;
+    background: #ccc;
+}
+.slide-img {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    top: -9px;
+        padding: 0px 10px;
+}
+.slide-img:after {
+    position: absolute;
+    width: 78%;
+    background: #d61516;
+    content: '';
+    height: 7px;
+    top: 9px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.slide-value {
+    position: relative;
+    z-index: 999;
+}
+.slide-value span {
+    position: absolute;
+    background: #6f1212;
+    left: -8px;
+    top: 28px;
+    color: #fff;
+    padding: 2px 3px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+.slide-value span:after {
+    position: absolute;
+    content: '';
+    border-bottom: 5px solid #6f1212;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    top: -5px;
+    left: 11px;
+}
+.filter-search {}
+.filter-search input{
+    padding-left: 45px;
+    font-size: 14px;
+    border-radius: 3px;
+}
+.filter-search span{
+    position: absolute;
+    left: 11px;
+    top: 7px;
+    color: #d61516;
+    border-right: 1px solid #cccc;
+    padding-right: 8px;
+}
+.jet_search_panel label{
+    font-size: 14px;
+    color: #777;
+}
+
+/* --------------------filter css------------- */
+
+/*---------------view aircraft section css------------------*/
+  .jet_search_panel {
+        width: 100%;
+        background: #f1f1f1;
+    }
+
+.compare_aircraft {
+    border: 1px solid #d61516;
+    padding: 10px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    color: #d61516;
+    cursor: pointer;
+    transition: .5s;
+}
+.compare_aircraft:hover{
+    background: #d61516;
+    color: #fff;
+
+}
+.view-tab {
+    display: inline-block;
+}
+.view-tab .nav-tabs{
+	border: 0px;
+	align-items: center;
+}
+.view-tab .nav-tabs .nav-item {
+    margin-bottom: 0px;
+    background: #ededed;
+    color: #363636;
+    display: inline-block;
+    width: 50px;
+    padding: 0px;
+    height: 50px;
+    border-radius: 5px;
+    margin: 0px 5px;
+    text-align: center;
+    font-size: 25px;
+    font-size: 32px;
+    line-height: 53px;
+}
+.view-tab p{
+	margin: 0px;
+}
+
+.view-tab .nav-tabs .nav-link.active {
+    color: #d61516;
+    background-color: #fbe5e5;
+    border: none;
+}
+
+.jet-compare .form-group input {
+  padding: 0;
+  height: initial;
+  width: initial;
+  margin-bottom: 0;
+  display: none;
+  cursor: pointer;
+}
+
+.jet-compare .form-group label {
+  position: relative;
+  cursor: pointer;
+  margin: 0px;
+  color: #929292
+}
+
+.jet-compare .form-group label:before {
+  content:'';
+  -webkit-appearance: none;
+  background-color: transparent;
+  border: 2px solid #cdcdcd;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05), inset 0px -15px 10px -12px rgba(0, 0, 0, 0.05);
+  padding: 10px;
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  cursor: pointer;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.jet-compare .form-group input:checked + label:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 3px;
+  left: 9px;
+  width: 6px;
+  height: 14px;
+  border: solid #d61516;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+.jet-selfie-list {
+     width: 164px;
+    border-radius: 5px;
+    overflow: hidden;
+    height: 150px;
+    display: inline-block;
+    float: left;
+}
+.jet-details {
+    width: calc(100% - 164px);
+    float: left;
+    display: flex;
+}
+.jet-selfie-list img {
+    /*width: 100%;*/
+    height: 100%;
+}
+.details_right {
+    border-left: 1px solid #aaa;
+    width: 30%;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.details_left {
+    width: 70%;
+}
+.jet_tittle {
+    color: #363636;
+    font-weight: 600;
+    padding:  0px;
+    font-size: 25px;
+}
+.jet-specify ul{
+
+}
+.jet-specify ul li{
+	display: inline-block;
+    color: #6b0b0b;
+    font-size: 16px;
+    padding: 0px 18px;
+    border-right: 2px solid #707070;
+    line-height: 14px;
+
+}
+.jet-specify ul li:first-child{
+	padding-left: 0px;
+}
+.jet-specify ul li:last-child{
+	border-right: 0px;
+}
+.jet_price {
+    font-size: 22px;
+    color: #6b0b0b;
+}
+
+.jet-selfie-view {
+    width: 100%;
+    height: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.jet-selfie-view img {
+    width: 100%;
+    height: 100%;
+}
+.jet_view .card{
+    border-radius: 10px;
+}
+.jet_view .card:hover{
+    box-shadow: 0px 5px 10px rgb(0 0 0 / 10%);
+}
+.jet-box .jet-specify ul li{
+    padding: 0px 4px;
+    font-size: 14px;
+}
+.jet-box .jet-specify ul li:last-child,.jet-box .jet-specify ul li:first-child{
+    padding-left: 0px;
+}
+.jet-box .jet-specify ul li:nth-child(3){
+    border: none;
+}
+.jet-box .jet_tittle{
+    font-size: 20px;
+}
+.jet-box .jet_price {
+    font-size: 18px;
+}
+.jet-box .jet-compare .form-group label:before{
+    padding: 7px;
+}
+.jet-box .jet-compare .form-group input:checked + label:after{
+    top: 4px;
+    left: 7px;
+}
+/*view aircraft section css*/
+
+/*-----------pagination -----------*/
+.page-pagination .page-link{
+    color: #141414;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    margin: 0px 5px;
+    transition: .5s;
+}
+.page-pagination .page-item.active .page-link,
+.page-pagination .page-item:hover .page-link {
+    z-index: 1;
+    color: #fff;
+    background-color: #d61516;
+    border-color: #d61516;
+}
+/*-----------pagination -----------*/
+
+/*======== footer css============*/
+.footer {
+    width: 100%;
+    color: #707070;
+    background: #f2f2f2;
+    padding: 40px 0px;
+}
+.footer .ftr-details{
+    font-size: 14px;
+    margin-bottom: 0px;
+}
+.footer-logo img {
+    width: 220px;
+    margin-bottom: 10px;
+}
+.footer-link{}
+.footer-link li {    width: 100%;}
+.footer-link li a{
+    text-decoration: none;
+    color: #707070;
+    padding: 0px 0px 14px;
+    display: inline-block;
+    width: 100%;
+}
+.social-link li{display: inline-block;}
+.social-link li a{
+        width: 40px;
+    height: 40px;
+    display: inline-block;
+    border: 1px solid #edc6c6;
+    text-align: center;
+    line-height: 40px;
+    text-decoration: none;
+    color: #d61516;
+    font-size: 24px;
+    transition: 1s;
+}
+.social-link li a:hover{
+    background: #d61516;
+    color: #fff;
+    border-radius: 50px;
+}
+.footer-bottom {
+    background: #363636;
+    color: #fff;
+    padding: 10px;
+}
+/*======== footer css============*/
+
+
+/*=============== popup design================ */
+#target{
+    display: block;
+}
+.plane-details{
+    position: fixed;
+    right: 0;
+    top: 0;
+    background: #fff;
+    width: 560px;
+    z-index: 9999;
+    height: 100vh;
+    border-radius: 10px 0px 0px 10px;
+    padding: 25px;
+    overflow-y: scroll;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 20%);
+}
+
+/*.plane-details:after{
+    position: absolute;
+    content: '';
+    background: #e80b0b;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    /* right: 0; 
+    width: 54vw;
+    height: 100vh;
+    z-index: 0;
+}*/
+
+
+
+.details-view-img {
+    width: 100%;
+    height: 190px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.details-view-img img {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+}
+.jet-specification {
+    width: 100%;
+}
+.jet-specification ul li {
+    display: inline-block;
+    width: 100%;
+    padding-bottom: 9px;
+}
+.mini-map img{
+    width: 70px;
+}
+/*=============== popup design================ */
+
+.map-sidebar{
+    width: 100%;
+    background: #fff;
+    padding: 0px 15px 100px;
+}
+.map-sidebar button{
+    font-weight: 500;
+    border-radius: 10px;
+}
+.map-sidebar button:focus{
+    box-shadow: none;
+    outline: none;
+}
+.map-sidebar .card{
+    border-radius: 10px;
+    background: #efefef;
+}
+.map-sidebar  .jet-specify ul li {
+    color: #363636;
+    font-size: 14px;
+    line-height: 12px;
+}
+.map-sidebar  .jet-specify ul li:last-child{
+    padding-left: 0px;
+}
+
+.area {
+    width: 80px;
+    height: 2px;
+    background: #002060;
+    border-radius: 5px;
+}
+.ar-2{  background: #b5960d}
+.ar-3{  background: #2e75b6}
+.ar-4{  background: #d61516}
+
+
+/*------------- responsive css ----------------*/
+
+@media only screen and (min-width:768px) and (max-width:992px){
+    .login{
+        background-size: 118% 100%;
+    }
+    .login-tittle{
+        font-size: 24px;
+    }
+    .login-bacg p {
+        font-size: 17px;
+    }
+    .login label {
+        font-size: 14px;
+    }
+    .forget{
+        font-size: 14px;
+    }
+    .jet-specify ul li{
+        font-size: 13px;
+        padding: 0px 8px;
+    }
+    .common-btn{
+        padding: 7px 25px;
+    }
+}
+
+@media only screen and (max-width: 667px){
+    .jet_search_panel .container > .row > .col{
+        flex-basis: inherit!important;
+     }
+    .view-tab .nav-tabs .nav-item{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+        font-size: 24px;
+    }
+    .compare_aircraft{
+        padding: 5px 10px;
+    }
+    .jet_tittle{
+        font-size: 18px;
+    }
+    .jet-specify ul li{
+        font-size: 12px;
+        padding: 0px 5px;
+        line-height: 10px;
+    }
+    .jet-compare .form-group label:before{
+        padding: 8px;
+    }
+    .jet_price{
+        font-size: 18px;
+    }
+    .common-btn{
+        padding: 5px 7px;
+        font-size: 14px;
+    }
+
+}
+
+@media only screen and (max-width: 475px){
+    
+        .plane-details{
+            position: absolute;
+            width: auto;
+            height: 95vh;
+            padding: 10px 15px;
+            margin: 15px;
+            border-radius: 5px;
+        }
+
+
+
+    .jet-selfie-view , .jet_view .card{
+        border-radius: 5px;
+    }
+
+    .login {
+        background-image: none;
+        background-size: cover;
+    }
+    .login:after{
+        background-image: url(../images/login-bg.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        width: 150%;
+        height: 500px;
+        position: absolute;
+        content: '';
+        top: -60px;
+        left: -170px;
+    }
+
+    .login-bacg{
+        align-items: end;
+        padding-bottom: 30px;
+    }
+    .login-tittle {
+        font-size: 20px;
+    }
+    .login-bacg p {
+        font-size: 14px;
+    }
+
+    .ogin-bacg p {
+        font-size: 14px;
+        margin: 0;
+        padding: 5px 0px;
+    }
+    .login input {
+        height: 35px;
+    }
+    .login label {
+        font-size: 14px;
+    }
+
+    .forget {
+        font-size: 14px;
+    }
+    .sign-up {
+        font-size: 16px;
+    }
+
+    .login-bacg:before {
+        width: 180px;
+        height: 180px;
+        bottom: -70px;
+        right: -80px;
+    }
+    .login-bacg:after{
+        top: inherit;
+        right: 85%;
+        bottom: -40px;
+    }
+    .jet-selfie-list{
+        width: 115px;
+        height: 120px;
+    }
+    .jet-details {
+        width: calc(100% - 115px);
+        display: inherit;
+    }
+    .details_left {
+        width: 100%;
+    }
+    .details_right {
+        border-left: none;
+        width: 100%;
+        justify-content: start;
+    }
+    .jet_tittle {
+        padding: 0px;
+        font-size: 18px;
+        line-height: 14px;
+    }
+    .jet-specify ul li {
+        font-size: 8px;
+        padding: 0px 2px;
+        border-right: 1.5px solid #707070;
+        line-height: 8px;
+        font-weight: bold;
+    }
+    .jet-compare .form-group label{
+        font-size: 12px;
+    }
+    .jet-compare .form-group label:before{
+        padding: 7px;
+    }
+    .jet-compare .form-group input:checked + label:after{
+        top: 3px;
+        left: 5px;
+        width: 6px;
+        height: 12px;
+    }
+    .jet_price{
+        font-size: 14px;
+        padding: 3px 0px;
+    }
+    .common-btn{
+            padding: 2px 20px;
+            font-size: 14px;
+    }
+    .view-tab .nav-tabs .nav-item{
+        width: 30px;
+        height: 30px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .compare_aircraft{
+        padding: 3px 7px;
+        font-size: 14px;
+    }
+    .bottom-pagination {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+        text-align: center;
+    }
+     .bottom-pagination p{
+        margin-bottom: 10px!important;
+     }
+     .bottom-pagination .pagination{
+        justify-content: center;
+     }
+     .show_pass{
+        top: 32px;
+     }
+     .jet_search_panel .container  .row  .col{
+        flex-basis: inherit!important;
+     }
+     .slide-img{
+        width: 94%;
+     }
+}
+
+
+
+
+
+
+/*------------- responsive css ----------------*/
